@@ -17,6 +17,13 @@ module.exports = {
         
     },
     findById: (req, res) => {
+        db.Book.findOne({
+            id: req.params.id
+        }).then(singleBook => {
+
+        }).catch(err => {
+            res.err(err)
+        })
         res.send('Find by ID was hit')
     },
     addBook: (req, res) => {
