@@ -2,7 +2,7 @@
 const router = require('express').Router();
 
 // file imports
-const booksController = require('../controllers/booksController');
+const booksController = require('../../controllers/booksController');
 
 // matches with /api/books
 router.route('/')
