@@ -5,8 +5,16 @@ const mongoose = require('mongoose');
 const db = require('../models');
 
 module.exports = {
+
     findAll: (req, res) => {
-        res.send('Find all was hit')
+        db.Book.find({
+
+        }).then(dbBooks => {
+            res.send('Find all was hit')
+        }).catch(err => {
+            res.err(err)
+        })
+        
     },
     findById: (req, res) => {
         res.send('Find by ID was hit')
