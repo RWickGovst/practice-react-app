@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/RWickGovst/practice-react-app#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.7.5",
     "react": "^16.8.6"
   }
